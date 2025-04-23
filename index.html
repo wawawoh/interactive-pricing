@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="reset.css">
   <title>Frontend Mentor | Interactive pricing component</title>
+  <script src="script.js" defer ></script>
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,21 +17,56 @@
   </style>
 </head>
 <body>
+  <header>
+    <h1> Simple, traffic-based pricing
+      </h1>
+      <p>Sign-up for our 30-day trial. No credit card required. </p>
+  </header>
+  <main>
+    <div class="value-container">
+      
+     
+      <p class="page-views">Pageviews</p>
+      <h2><span class="money">$16.00</span>/ month</h2>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+    </div>
 
-  Pageviews
-  $ /month
+    <div class="scroll-container">
+      <input type="range" min="1" max="5" value="1" class="slider" id="slider"> 
+    </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+    <div class="billing-type">
+      <p>monthly billing</p>
+      <label class="switch">
+        <input type="checkbox" class="yearly-billing">
+        <span class="slide round"></span>
+      </label>
+      <p>Yearly Billing </p>
+      <p class="discount">25% discount</p>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+    </div>
+    <section class="benefits-container">
+      <div class="benefits">
+          <p class="benefits-item">Unlimited websites</p>
+          <p class="benefits-item">100% data ownership</p>
+          <p class="benefits-item">Email reports</p>
+        </div>
+        <button> Start my trial</button>
+    </section>
+   
 
-  Start my trial
+  
+  
+
+  
+
+  
+
+ 
+
+  </main>
+
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
